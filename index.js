@@ -2,7 +2,7 @@ const express=require("express");
 const axios=require("axios");
 const app=express();
 const PORT=process.env.PORT||3000;
-const API_KEY=process.env.ROBLOX_API_KEY;
+const API_KEY=process.env.KEY;
 app.get("/fetch-data",async(req,res)=>{
 try{
 const ipRes=await axios.get("https://api.ipify.org?format=json");
